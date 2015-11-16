@@ -52,7 +52,21 @@ svg {
 	NAVIGATION
 ---------------------------------------------------------------- */
 
+header {
+  background: hotpink;
+}
+
 .primary-nav {
-  display: inline-block;
+  background: lime;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.primary-nav li {
   float: left;
+  list-style: none;
+}
+
+.recent-posts {
+
 }

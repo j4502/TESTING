@@ -5,46 +5,71 @@
         <meta name="author" content="Emily Stewart">
         <meta name="description" content="Example project for J4502.">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="/assets/css/application.css" rel="stylesheet" />
         <title>Example Project | J4502</title>
+
+        <!-- TypeKit-->
+        <script src="https://use.typekit.net/nks6fpa.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="contact/index.html">Contact</a></li>
-                    <li><a href="about/index.html">About</a></li>
-                </ul>
-            </nav>
+            <div class="container-fluid">
+                <nav class="primary-nav" role="navigation">
+                    <ul class="row">
+                        <li class="col-xs-4">
+                          <a href="/">Home</a>
+                        </li>
+                        <li class="col-xs-4">
+                          <a href="/contact/">Contact</a>
+                        </li>
+                        <li class="col-xs-4">
+                          <a href="/about/">About</a>
+                        </li>
+                    </ul>
+                </nav>
+              </div>
         </header>
 
-        <div>
-            <h1>Boots Reviews</h1>
-            <p>You may have arrived on this page and thought, "Why in the world does this page have cats on it?" That's because this site consists of product reviews written by me, Boots. It is <strong>not</strong> reviews of the type of shoe. Go read Amazon for that.</p>
+        <div id="main" class="homepage-hero" role="main">
+            <img src="assets/images/nasa-space-shuttle-06.jpg" alt="illustration of space shuttle">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1 class="col-xs-3 headline">Boots Reviews</h1>
+                    <p>You may have arrived on this page and thought, "Why in the world does this page have cats on it?" That's because this site consists of product reviews written by me, Boots. It is <strong>not</strong> reviews of the type of shoe. Go read Amazon for that.</p>
+                </div>
 
-            <h2>Recent Posts</h2>
-            <ul>
-                <li>
-                    <a href="">
-                        <h3>Post #1</h3>
-                        <p>Excerpt #1</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Post #2</h3>
-                        <p>Excerpt #2</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Post #3</h3>
-                        <p>Excerpt #3</p>
-                    </a>
-                </li>
+                <div class="posts recent-posts">
+                    <h2 class="row">Recent Posts</h2>
 
-            </ul>
-        </div>
+                    <ul class="row">
+                        <li>
+                            <a href="/posts/food-vault">
+                              <div class="col-xs-3">
+                                <img src="assets/images/nasa-space-shuttle-06.jpg" alt="image of spaceship">
+                              </div>
+                              <div class="col-xs-9">
+                                <h3>Food Vault</h3>
+                                <p>Excerpt #1</p>
+                              </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Post #2</h3>
+                                <p>Excerpt #2</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>Post #3</h3>
+                                <p>Excerpt #3</p>
+                            </a>
+                        </li>
 
+                    </ul>
+                  </div>
+              </div><!--end .container-fluid-->
+        </div><!--end .homepage-hero-->
     </body>
 </html>

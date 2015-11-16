@@ -5,11 +5,13 @@
         <meta name="author" content="Emily Stewart">
         <meta name="description" content="Example project for J4502.">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="assets/stylesheets/application.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
         <title>Example Project | J4502</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/contact/">Contact</a></li>
@@ -18,33 +20,37 @@
             </nav>
         </header>
 
-        <div>
-            <h1>Boots Reviews</h1>
-            <p>You may have arrived on this page and thought, "Why in the world does this page have cats on it?" That's because this site consists of product reviews written by me, Boots. It is <strong>not</strong> reviews of the type of shoe. Go read Amazon for that.</p>
+        <div id="main" class="homepage-hero" role="main">
+            <img src="assets/images/nasa-space-shuttle-06.jpg" alt="illustration of space shuttle">
+            <div class="container">
+                <h1 class="headline">Boots Reviews</h1>
+                <p>You may have arrived on this page and thought, "Why in the world does this page have cats on it?" That's because this site consists of product reviews written by me, Boots. It is <strong>not</strong> reviews of the type of shoe. Go read Amazon for that.</p>
+            </div>
+            <div class="posts recent-posts">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <h3>Post #1</h3>
+                            <p>Excerpt #1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Post #2</h3>
+                            <p>Excerpt #2</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>Post #3</h3>
+                            <p>Excerpt #3</p>
+                        </a>
+                    </li>
 
-            <h2>Recent Posts</h2>
-            <ul>
-                <li>
-                    <a href="">
-                        <h3>Post #1</h3>
-                        <p>Excerpt #1</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Post #2</h3>
-                        <p>Excerpt #2</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h3>Post #3</h3>
-                        <p>Excerpt #3</p>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
+                </ul>
+            </div>
+        </div><!--end .homepage-hero-->
 
     </body>
 </html>

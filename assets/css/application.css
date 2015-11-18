@@ -82,8 +82,49 @@ header {
 	Recent Posts
 ---------------------------------------------------------------- */
 
-.recent-posts li {
+.item-post {
     list-style: none;
+}
+
+.item-post a {
+    border-bottom: 1px solid #d8d8d8;
+    display: block;
+    padding: 1em 0;
+}
+
+
+/*
+----------------------------------------------------------------
+	About
+---------------------------------------------------------------- */
+
+.hero-image-bio {
+    border-radius: 100%;
+}
+
+.bio,
+.contact-info {
+    padding-top: 3em;
+}
+
+.headline-bio,
+.contact-info h2 {
+    text-align: center;
+}
+
+.contact-info h2 {
+    padding-bottom: 0.5em;
+}
+
+.contact-list-item {
+    list-style: none;
+    text-align: center;
+}
+
+.contact-list-item i {
+    display: block;
+    padding-right: 0.25em;
+    text-align: center;
 }
 
 

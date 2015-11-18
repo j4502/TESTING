@@ -6,12 +6,17 @@
 ---------------------------------------------------------------- */
 
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    list-style-position: inside;
 }
 
 body {
-    color: #081211;
+    background: #FFFFFA;
+    color: #1B1633;
     font-family: 'kepler-std', georgia, serif;
     font-size: 16px;
     margin: 0;
@@ -23,19 +28,42 @@ body {
 	Typography
 ---------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
+    color: #A63F5B;
     font-family: 'futura-pt-condensed', 'futura', sans-serif;
     font-weight: 400;
     line-height: 1.1;
     margin: 0;
 }
 
+h1 {
+    margin-top: 0.5em;
+}
+
+h2 {
+    color: #265161;
+    font-family: 'kepler-std', georgia, serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.1;
+    margin: 1em 0 0.5em 0;
+}
+
 h1 { font-size: 3.6em;}
-h2 { font-size: 3.2em;}
 h3 { font-size: 2.3em;}
 h4 { font-size: 2.0em;}
 h5 { font-size: 1.6em;}
 h6 { font-size: 1.0em;}
+
+
+a {
+    color: #66285B;
+}
+
+a:visited {
+    color: #66285B;
+}
 
 /*
 ----------------------------------------------------------------
@@ -55,7 +83,14 @@ svg {
 ---------------------------------------------------------------- */
 
 header {
+    background: #FDFDF8;
+    border: 2px solid #F8F8E9;
+    margin-bottom: 1.5em;
     padding: 1em 0;
+}
+
+.no-bleed {
+    margin-bottom: 0;
 }
 
 .primary-nav {
@@ -70,8 +105,14 @@ header {
 }
 
 .primary-nav li a {
+    color: #1B1633;
+    display: block;
     font-family: 'futura-pt-condensed', sans-serif;
     font-size: 1.5em;
+}
+
+.logo {
+    margin: 0px auto;
 }
 
 
@@ -85,7 +126,7 @@ header {
 }
 
 .item-post a {
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid #F8F8E9;
     display: block;
     padding: 1em 0;
 }
@@ -132,10 +173,11 @@ header {
 ---------------------------------------------------------------- */
 
 footer {
-    background: #B55F2C;
-    color: #ffccad;
+    border-top: 0.25em solid #66285B;
+    background: #1B1633;
+    color: #BDB8D7;
     margin-top: 6em;
-    padding: 6em 0;
+    padding: 1.5em 0;
     text-align: center;
 }
 

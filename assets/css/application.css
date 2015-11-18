@@ -7,7 +7,7 @@
 
 ul {
   margin: 0;
-  padding: O;
+  padding: 0;
 }
 
 body {
@@ -26,9 +26,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'futura-pt-condensed', sans-serif;
     font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
 }
 
-h1 { font-size: 4.0em;}
+h1 {
+    font-size: 4.0em;
+    line-height: 1.1;
+}
+
 h2 { font-size: 3.2em;}
 h3 { font-size: 2.3em;}
 h4 { font-size: 2.0em;}
@@ -49,24 +55,49 @@ svg {
 
 /*
 ----------------------------------------------------------------
-	NAVIGATION
+	Navigation
 ---------------------------------------------------------------- */
 
 header {
-  background: hotpink;
+    padding: 1em 0;
 }
 
 .primary-nav {
-  background: lime;
-  padding-top: 40px;
-  padding-bottom: 40px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .primary-nav li {
-  float: left;
-  list-style: none;
+    float: left;
+    list-style: none;
 }
 
-.recent-posts {
-
+.primary-nav li a {
+    font-family: 'futura-pt-condensed', sans-serif;
 }
+
+
+/*
+----------------------------------------------------------------
+	Recent Posts
+---------------------------------------------------------------- */
+
+.recent-posts li {
+    list-style: none;
+}
+
+
+/*
+----------------------------------------------------------------
+	Footer
+---------------------------------------------------------------- */
+
+footer {
+    background: #B55F2C;
+    color: #ffccad;
+    margin-top: 6em;
+    padding: 6em 0;
+    text-align: center;
+}
+
+/* End Styles */
